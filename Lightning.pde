@@ -17,17 +17,18 @@ void mousePressed()
 void lightning()
 {
   strokeWeight(6);
+  stroke((int)(Math.random()*250),(int)(Math.random()*250),(int)(Math.random()*250),(int)(Math.random()*250));
   int xStart;
   int yStart;
   int xEnd;
   int yEnd;
-  xStart = (int)(Math.random()*9);
+  xStart = (int)(Math.random()*100);
   yStart = (int)(Math.random()*150);
-  xEnd = (int)(Math.random()*9);
-  yEnd = (int)(Math.random()*150);
+  xEnd = xStart+(int)(Math.random()*100);
+  yEnd = yStart+(int)(Math.random()*150);
  
  line(xStart, yStart, xEnd, yEnd);
- stroke((int)(Math.random()*250),(int)(Math.random()*250),(int)(Math.random()*250),(int)(Math.random()*250));
+ 
  
  while (xEnd<1000){
    
