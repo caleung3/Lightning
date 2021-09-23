@@ -40,4 +40,8 @@ void lightning()
    yEnd = yStart+(int)(Math.random()*yRandomChange);
    line(xStart, yStart, xEnd, yEnd);
  }
-}
+ stroke(0,0,0);
+ fill(255,255,255);
+ rect(500, 750, 50,50);
+ triangle(490, 749, 560, 749, 525, 715);
+ }
